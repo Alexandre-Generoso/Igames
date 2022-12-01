@@ -1,0 +1,20 @@
+fetch(`https://rawg.io/api/games/${id}?token&key=3f790e1bc02c41f49c5ffb3cfbb0766e`)
+	.then((res) => res.json())
+		.then(data => {
+			
+			let str = ''
+            
+                const { name, background_image, rating, description  } = data;
+				    str = `
+                    <h1>${name}</h1>
+                    <img src="${background_image}" alt="">
+                    <p>Descricao:</p>
+                    <p>${description}</p>
+                    <p>Rating: ${rating}</p>
+                    `
+                console.log(str);
+				
+			  
+			
+			document.getElementById('cards-container').innerHTML = str;
+		})
