@@ -82,7 +82,7 @@ function loadGames(parametro, value){
 							<div class="carousel-caption d-none d-md-block">
 								<div class=" bg-dark mb-2 rounded bg-opacity-75 col-md-6 mx-auto">
 								<h5>${jogo[0].name}</h5>
-								<p>Released: ${jogo[0].released}</p>
+								<button type="button" class="btn btn-sm text-light " onclick="pegarId(${jogo[0].id})">Mais detalhes</button>
 								</div>
 							</div>
 							</div>
@@ -91,7 +91,7 @@ function loadGames(parametro, value){
 							<div class="carousel-caption d-none d-md-block">
 							<div class="bg-dark mb-2 rounded bg-opacity-75 col-md-6 mx-auto">
 							<h5>${jogo[1].name}</h5>
-							<p>Released: ${jogo[1].released}</p>
+							<button type="button" class="btn btn-sm text-light bg-warning" onclick="pegarId(${jogo[1].id})">Mais detalhes</button>
 							</div>
 							</div>
 							</div>
@@ -100,7 +100,7 @@ function loadGames(parametro, value){
 							<div class="carousel-caption d-none d-md-block">
 							<div class="bg-dark mb-2 rounded bg-opacity-75 col-md-6 mx-auto" >
 								<h5>${jogo[2].name}</h5>
-								<p>Released: ${jogo[2].released}</p>
+								<button type="button" class="btn btn-sm text-light bg-warning" onclick="pegarId(${jogo[2].id})">Mais detalhes</button>
 								</div>
 							</div>
 							</div>
